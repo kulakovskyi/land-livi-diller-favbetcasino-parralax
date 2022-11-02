@@ -1,0 +1,267 @@
+$blue: #000055
+$magenta: #ff267e
+$green: #05C489
+$grey: #e8e8e8
+
+
+$font-suisse-reg: 'SuisseIntl-Regular', sans-serif
+$font-suisse-med: SuisseIntl-Medium, sans-serif // 500
+$font-suisse-semb: 'SuisseIntl-SemiBold', sans-serif // 600
+$font-wulkan: 'WulkanDisplay-SemiBoldItalic', sans-serif
+
+body
+  background: $blue
+  overscroll-behavior: none
+
+.hide
+  display: none !important
+
+.fav-page
+  width: 100%
+  height: 100%
+  overflow: hidden
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  position: relative
+  img
+    max-width: 100%
+    height: auto
+
+.main-link
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 5
+
+.bonus
+  position: relative
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  height: 100%
+  padding-right: 104px
+  &__logo
+    width: 462px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+  &__img
+    max-width: 80vw
+    position: absolute
+    left: 0
+    bottom: 0
+    top: 0
+    display: flex
+    align-items: center
+  &__right
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    z-index: 1
+    margin-top: 80px
+    &-title
+      display: flex
+      align-items: flex-end
+      margin: 0 0 15px 0
+      &-left
+        font-family: $font-wulkan
+        font-size: 80px
+        line-height: 72px
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: $magenta
+        margin: 0 25px 0 0
+      &-right
+        font-family: $font-suisse-med
+        font-size: 18px
+        line-height: 20px
+        color: $magenta
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        span
+          color: rgba(255, 38, 126, 0.7)
+      &-prom
+        font-family: $font-suisse-semb
+        font-size: 80px
+        line-height: 94px
+        color: $grey
+        text-align: center
+
+
+    &-subtitle
+      margin: 26px 0
+      display: flex
+      justify-content: center
+      align-items: flex-start
+      &-left,
+      &-right
+        span
+          font-family: $font-wulkan
+          font-size: 42px
+          line-height: 36px
+          letter-spacing: 0.02em
+          text-transform: uppercase
+          color: #ffffff
+          padding: 1px 27px
+          display: inline-block
+          background: $magenta
+      &-left
+        margin: 0 30px 0 0
+        span
+          margin: 0 0 10px 0
+      &-right
+        span
+          margin: 0 0 7px 0
+      &-text
+        font-family: $font-suisse-med
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        color: #ffffff
+        font-size: 15px
+        line-height: 20px
+        text-align: center
+      &-price
+        font-family: $font-suisse-med
+        color: rgba(255, 255, 255, 0.7)
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        font-size: 13px
+        line-height: 20px
+        text-align: center
+        margin: 0 0 7px 0
+
+    &-btn
+      display: inline-block
+      font-family: $font-suisse-semb
+      background: $green
+      color: $blue
+      font-size: 18px
+      line-height: 23px
+      text-transform: uppercase
+      padding: 23px 87px 21px
+      letter-spacing: 0.08em
+      border-radius: 5px
+      margin: 0 0 40px 0
+    &-copy
+      display: flex
+      flex-direction: column
+      align-items: center
+      &-top
+        margin: 0 0 16px 0
+        img
+          display: inline-block
+          margin: 0 21px 0 0
+          &:last-child
+            margin: 0
+
+
+.parallax
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  &__layer
+    height: 100%
+    right: 0
+    &-item
+      position: absolute
+      &:before,
+      &:after
+        content: ""
+        background: url("../img/star.png") no-repeat 0 0/contain
+        width: 140px
+        height: 140px
+        position: absolute
+    .item-1
+      background: url("../img/card-1.png") no-repeat 0 0/contain
+      width: 397px
+      height: 386px
+      bottom: 40px
+      right: 700px
+      &:before
+        bottom: 125px
+        right: 70px
+        opacity: 0
+        animation: 2s fade linear infinite
+      &:after
+        bottom: -10px
+        right: 90px
+        opacity: 0
+        animation: 2s fade 1s linear infinite
+    .item-2
+      background: url("../img/card-2.png") no-repeat 0 0/contain
+      width: 273px
+      height: 233px
+      bottom: 20px
+      left: 80px
+      &:before
+        bottom: 70px
+        right: 110px
+        opacity: 0
+        animation: 2s fade linear infinite
+      &:after
+        bottom: -30px
+        right: 124px
+        opacity: 0
+        animation: 2s fade 1s linear infinite
+    .item-3
+      background: url("../img/card-3.png") no-repeat 0 0/contain
+      width: 352px
+      height: 259px
+      top: 158px
+      right: 190px
+      &:before
+        top: -20px
+        right: 49px
+        opacity: 0
+        animation: 2s fade linear infinite
+      &:after
+        top: 44px
+        right: -16px
+        opacity: 0
+        animation: 2s fade 1s linear infinite
+    .item-4
+      background: url("../img/chip-1.png") no-repeat 0 0/contain
+      width: 324px
+      height: 253px
+      top: 300px
+      left: -73px
+    .item-5
+      background: url("../img/chip-2.png") no-repeat 0 0/contain
+      width: 147px
+      height: 173px
+      top: 100px
+      left: 500px
+      &:before
+        top: -27px
+        right: 51px
+        opacity: 0
+        animation: 2s fade linear infinite
+      &:after
+        content: none
+    .item-6
+      background: url("../img/chip-3.png") no-repeat 0 0/contain
+      width: 355px
+      height: 267px
+      top: -75px
+      right: 530px
+    .item-7
+      background: url("../img/chip-4.png") no-repeat 0 0/contain
+      width: 480px
+      height: 323px
+      bottom: 91px
+      right: -214px
+    .item-4,.item-6,.item-7
+      &:before,&:after
+        content: none
+
+@keyframes fade
+  0%
+    opacity: 0
+  50%
+    opacity: 1
+  100%
+    opacity: 0
