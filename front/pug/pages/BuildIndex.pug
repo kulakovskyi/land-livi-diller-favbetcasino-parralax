@@ -1,37 +1,23 @@
 .fav-page
   a(href="https://www.favbet.hr/hr/registracija/").main-link
   .bonus
+    .bonus__light
     .bonus__logo
       img(src="img/logo.svg" alt="Favbet")
     .bonus__img
-      picture.glitch-img
-        source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/bg-mob.jpg")
-        source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/bg.jpg")
-        source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/bg.jpg")
-        source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/bg.jpg")
-        img(src="img/bg.jpg" alt="Favbet")
+      picture
+        source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/bg-mob.png")
+        source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/bg-mob.png")
+        source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/bg-tab.png")
+        source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/bg.png")
+        img(src="img/bg.png" alt="Favbet")
     .bonus__right
-      .bonus__right-title
-        .bonus__right-title-left 100%
-        .bonus__right-title-right do 5.000 kn#[br] #[span = 663, 61€]
-      .bonus__right-title-prom BONUSA NA PRVI#[br] DEPOZIT
-      .bonus__right-subtitle
-        .bonus__right-subtitle-left #[span 200]
-          .bonus__right-subtitle-text BESPLATNIH#[br] VRTNJI
-        .bonus__right-subtitle-right #[span 200KN]
-          .bonus__right-subtitle-price = 26,54€
-          .bonus__right-subtitle-text RISK-FREE BET
-      .bonus__right-btn-wrap
-        a(href="https://www.favbet.hr/hr/registracija/").bonus__right-btn Uzmi bonus
-      .bonus__right-copy
-        .bonus__right-copy-top
-          img(src='img/18+.svg' alt='18+')
-          img(src='img/visa.svg' alt='visa')
-          img(src='img/a.svg' alt='a')
-          img(src='img/mastercard.svg' alt='mastercard')
-          img(src='img/maestro.svg' alt='maestro')
-        .bonus__right-copy-bottom
-          img(src='img/aircash.svg' alt='aircash')
+      .bonus__right-title Bonus
+      .bonus__right-text
+        span 50 000 INR
+        img(src='img/plus.svg' alt='plus')
+        span 155 FS
+      a(href='#').bonus__right-link Get a bonus
   .parallax#scene
     .parallax__layer(data-depth="0.3")
       .parallax__layer-item.item-1
@@ -47,3 +33,5 @@
       .parallax__layer-item.item-6
     .parallax__layer(data-depth="0.1")
       .parallax__layer-item.item-7
+    .parallax__layer(data-depth="0.1")
+      .parallax__layer-item.item-8
