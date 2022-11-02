@@ -53,9 +53,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 5;
-  display: none;
-  overflow: hidden; }
+  z-index: 5; }
 
 .bonus {
   position: relative;
@@ -89,7 +87,7 @@ body {
     align-items: center; }
   .bonus__right {
     position: relative;
-    z-index: 4;
+    z-index: 5;
     margin-top: 110px; }
     .bonus__right-title {
       font-family: "SuisseIntl-Medium", sans-serif;
