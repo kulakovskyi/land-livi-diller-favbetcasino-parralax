@@ -223,13 +223,23 @@ body {
       height: 440px;
       bottom: -214px;
       right: 73px; }
+      .parallax__layer .item-7:before {
+        top: 4px;
+        right: 44px;
+        opacity: 0;
+        animation: 2s fade linear infinite; }
+      .parallax__layer .item-7:after {
+        top: 90px;
+        right: 64px;
+        opacity: 0;
+        animation: 2s fade 1s linear infinite; }
     .parallax__layer .item-8 {
       background: url("../img/card-3.png") no-repeat 0 0/contain;
       width: 393px;
       height: 416px;
       top: 277px;
       left: -38px; }
-    .parallax__layer .item-4:before, .parallax__layer .item-4:after, .parallax__layer .item-6:before, .parallax__layer .item-6:after, .parallax__layer .item-7:before, .parallax__layer .item-7:after, .parallax__layer .item-8:before, .parallax__layer .item-8:after {
+    .parallax__layer .item-4:before, .parallax__layer .item-4:after, .parallax__layer .item-6:before, .parallax__layer .item-6:after, .parallax__layer .item-8:before, .parallax__layer .item-8:after {
       content: none; }
 
 @keyframes fade {

@@ -205,13 +205,23 @@ body
       height: 440px
       bottom: -214px
       right: 73px
+      &:before
+        top: 4px
+        right: 44px
+        opacity: 0
+        animation: 2s fade linear infinite
+      &:after
+        top: 90px
+        right: 64px
+        opacity: 0
+        animation: 2s fade 1s linear infinite
     .item-8
       background: url("../img/card-3.png") no-repeat 0 0/contain
       width: 393px
       height: 416px
       top: 277px
       left: -38px
-    .item-4,.item-6,.item-7, .item-8
+    .item-4,.item-6, .item-8
       &:before,&:after
         content: none
 
