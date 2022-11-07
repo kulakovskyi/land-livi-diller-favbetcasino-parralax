@@ -1,4 +1,3 @@
-
 (function(){
     let screenWidth = window.innerWidth
     if (screenWidth >= 1280){
